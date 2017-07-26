@@ -1,0 +1,1603 @@
+{
+  "package": "HumanAPI",
+  "tagline": "HumanAPI",
+  "description": "Real-time access to digital, structured health and medical data from providers, labs, pharmacies, devices and apps",
+  "image": "http:\/\/logo.clearbit.com\/humanapi.co",
+  "repo": "https:\/\/github.com\/RapidSoftwareSolutions\/Marketplace-HumanAPI-Package",
+  "keywords": [
+    "API",
+    "health",
+    "medical",
+    "humanapi",
+    "labs",
+    "pharmacy",
+    "healthdevice"
+  ],
+  "accounts": {
+    "domain": "humanapi.co",
+    "credentials": [
+      "accessToken"
+    ]
+  },
+  "blocks": [
+    {
+      "name": "getAllergies",
+      "description": "Get a list of medical allergies the user has had so far",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getSingleAllergy",
+      "description": "Returns a single allergy",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "allergyId",
+          "type": "String",
+          "info": "Id of the allergy",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getMedicalEncounters",
+      "description": "Get a list of medical encounters the user has had so far",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getSingleMedicalEncounter",
+      "description": "Returns a single encounter",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "encounterId",
+          "type": "String",
+          "info": "Id of the encounter",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getMedicalFunctionalStatuses",
+      "description": "Get a list of medical functional statuses associated with the user",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getSingleFunctionalStatus",
+      "description": "Returns a single functional status",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "functionalStatusId",
+          "type": "String",
+          "info": "Id of the functional status",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getMedicalImmunizations",
+      "description": "Get a list of immunizations the user has had so far",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getSingleImmunization",
+      "description": "Returns a single immunization",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "immunizationId",
+          "type": "String",
+          "info": "Id of the immunization",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getMedicalInstructions",
+      "description": "Get a list of medical instructions associated with the user",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getSingleInstruction",
+      "description": "Returns a single instruction",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "instructionId",
+          "type": "String",
+          "info": "Id of the instruction",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getMedicalMedications",
+      "description": "Get a list of medical medications the user has had so far",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getSingleMedication",
+      "description": "Returns a single medication",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "medicationId",
+          "type": "String",
+          "info": "Id of the medication",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getMedicalNarratives",
+      "description": "Get a list of medical narratives associated with the user",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getSingleNarrative",
+      "description": "Returns a single narrative",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "narrativeId",
+          "type": "String",
+          "info": "Id of the narrative",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getSingleOrganization",
+      "description": "Returns a single organization",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "organizationId",
+          "type": "String",
+          "info": "Id of the organization",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getMedicalPlansOfCare",
+      "description": "Get a list of medical plans of care associated with the user",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getSinglePlanOfCare",
+      "description": "Returns a single plan of care",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "planOfCareId",
+          "type": "String",
+          "info": "Id of the plan of care",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getMedicalProblems",
+      "description": "Get a list of medical problems the user has had so far",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getSingleProblem",
+      "description": "Returns a single medical problem",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "problemId",
+          "type": "String",
+          "info": "Id of the problem",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getMedicalProcedures",
+      "description": "Get a list of medical procedures associated with the user",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getSingleProcedure",
+      "description": "Returns a single medical procedure",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "procedureId",
+          "type": "String",
+          "info": "Id of the procedure",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getMedicalProfile",
+      "description": "Get the current medical health profile of the user. Returns user’s data that most likely doesn’t change: demographics, smoking status, alcohol use, etc.",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getMedicalTestResults",
+      "description": "Get a list of medical lab’s results from a user’s medical record",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getSingleTestResults",
+      "description": "Returns a single test result",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "testResultId",
+          "type": "String",
+          "info": "Id of the test result",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getTimeline",
+      "description": "Returns a timeline of the user. It shows every timestamped medical object recorded into our system. The full object details are not available here but they are linked and available via own resource end points.",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getVitalsReadings",
+      "description": "Get the user’s Vitals reading",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getSingleVitalsReading",
+      "description": "Returns a single vital reading",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "vitalReadingId",
+          "type": "String",
+          "info": "Id of the vital reading",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getUserCCDs",
+      "description": "Returns full CCDs available for the user including the raw xml.",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getUserSingleCCD",
+      "description": "Returns single CCD raw payload",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "ccdId",
+          "type": "String",
+          "info": "Id of the ccd",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getUserActivities",
+      "description": "Get a list of activities the user has",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getUserSingleActivity",
+      "description": "Returns single activity",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "activityId",
+          "type": "String",
+          "info": "Id of the activity",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getActivitySummaries",
+      "description": "Get a list of daily activity summaries reported by the data sources.",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getSingleActivitySummaryById",
+      "description": "Returns single activity summary by its Id",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "summaryId",
+          "type": "String",
+          "info": "Id of the summary",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getSingleActivitySummaryByDate",
+      "description": "Returns single activity summary by its date",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "summaryDate",
+          "type": "DatePicker",
+          "info": "Date of the summary",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getLatestBloodGlucoseReading",
+      "description": "Returns the latest blood glucose reading",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getBloodGlucoseReadings",
+      "description": "Returns all blood glucose readings",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getLatestBloodOxygenReading",
+      "description": "Returns the latest blood oxygen reading",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getBloodOxygenReadings",
+      "description": "Returns all blood oxygen readings",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getLatestBloodPressureReading",
+      "description": "Returns the latest blood pressure reading",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getBloodPressureReadings",
+      "description": "Returns all blood pressure readings",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getLatestBMIReading",
+      "description": "Returns the latest bmi reading",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getBMIReadings",
+      "description": "Returns all bmi readings",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getBodyFatReading",
+      "description": "Returns a body fat reading",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getBodyFatReadings",
+      "description": "Returns all body fat readings",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getGeneticTraits",
+      "description": "Returns genetic traits",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getGenotypes",
+      "description": "Returns a list of requested genotypes",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "locations",
+          "type": "List",
+          "structure": {
+            "name": "location",
+            "type": "String",
+            "info": "Single SNP locatio"
+          },
+          "info": "Array of locations (SNPs) to request",
+          "required": false
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getHeartRateReading",
+      "description": "Returns a heart rate reading",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getHeartRateReadings",
+      "description": "Returns all heart rate readings",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getHeartRateSummaries",
+      "description": "Returns a list of heart rate summaries",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getHeartRateSummaryById",
+      "description": "Returns a heart rate summary by id",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "hrSummaryId",
+          "type": "String",
+          "info": "Id of the heart rate summary",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getHeartRateSummaryByDate",
+      "description": "Returns a heart rate summary by date",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "hrSummaryDate",
+          "type": "DatePicker",
+          "info": "Date of the heart rate summary",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getHeightReading",
+      "description": "Returns a height reading",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getHeightReadings",
+      "description": "Returns all height readings",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getHumanProfile",
+      "description": "Get summary object for a person’s latest health metrics. The data consists of all the discrete health measurements and summary information about the person’s activity and sleep data.",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getLocationsReadings",
+      "description": "Returns a locations readings",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getUserMeals",
+      "description": "Get a list of meals the user has",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getUserSingleMeal",
+      "description": "Returns a single meal",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "mealId",
+          "type": "String",
+          "info": "Id of the meal",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getUserSleeps",
+      "description": "Get a list of sleeps the user has",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getUserSingleSleep",
+      "description": "Returns a single sleep",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "sleepId",
+          "type": "String",
+          "info": "Id of the sleep",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getUserSleepSummaries",
+      "description": "Returns a list of sleep summaries",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getUserSingleSleepSummaryById",
+      "description": "Returns single sleep summary by its Id",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "sleepSummaryId",
+          "type": "String",
+          "info": "Id of the sleep summary",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getUserSingleSleepSummaryByDate",
+      "description": "Returns single sleep summary by its date",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        },
+        {
+          "name": "sleepSummaryDate",
+          "type": "DatePicker",
+          "info": "Date of the sleep summary",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getUserWeightReading",
+      "description": "Returns a weight reading",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getUserWeightReadings",
+      "description": "Returns all weight readings",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getUserSources",
+      "description": "Returns a sources reading",
+      "args": [
+        {
+          "name": "accessToken",
+          "type": "String",
+          "info": "Access token received from HumanAPI",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    }
+  ]
+}
