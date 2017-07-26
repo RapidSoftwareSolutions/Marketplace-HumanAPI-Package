@@ -16,7 +16,6 @@
   "accounts": {
     "domain": "humanapi.co",
     "credentials": [
-      "accessToken"
     ]
   },
   "blocks": [

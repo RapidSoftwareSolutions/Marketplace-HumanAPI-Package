@@ -3,7 +3,7 @@
 # HumanAPI Package
 Real-time access to digital, structured health and medical data from providers, labs, pharmacies, devices and apps
 * Domain: [HumanAPI](http://humanapi.co)
-* Credentials: accessToken
+* Credentials:
 
 ## How to get credentials: 
 0. Access token to be provided by user
