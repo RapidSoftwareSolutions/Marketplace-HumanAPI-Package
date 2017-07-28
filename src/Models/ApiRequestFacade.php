@@ -18,6 +18,7 @@ class ApiRequestFacade
             $resp = $requestFacade->makeRequest(new Client(), $params, $post_data, $query_str, $reqType, $paramType);
 
             $responseBody = $resp->getBody()->getContents();
+
             $rawBody = json_decode($resp->getBody());
             $all_data[] = $rawBody;
             if ($resp->getStatusCode() == $responseCode) {
